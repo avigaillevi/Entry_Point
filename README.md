@@ -6,12 +6,8 @@
 This folder contains the exported Postman files for the project.
 
 ## Files
+[Djson.postman_environment.json](https://github.com/user-attachments/files/27952080/Djson.postman_environment.json)
 
 
-- Environment JSON file
+[DummyJSON.postman_collection.json](https://github.com/user-attachments/files/27952081/DummyJSON.postman_collection.json)
 
-## How to use
-
-1. Open Postman
-2. Click Import
-3. Select the JSON files from this folder
