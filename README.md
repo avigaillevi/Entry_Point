@@ -1,11 +1,12 @@
 # Entry_Point/posman
 
+## description of this project
 
-# Postman Files
+This project was created for practicing API testing using Postman.  
+It includes working with different API endpoints, sending HTTP requests, and validating server responses.
 
-This folder contains the exported Postman files for the project.
 
-## Files
+### Postman Files
 [Djson.postman_environment.json](https://github.com/user-attachments/files/27952080/Djson.postman_environment.json)
 
 
