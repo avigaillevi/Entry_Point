@@ -1,0 +1,691 @@
+{
+  "info": {
+    "_postman_id": "58d69e84-6901-45ce-a1ac-412e31844524",
+    "name": "DummyJSON",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "45845914",
+    "_collection_link": "https://go.postman.co/collection/45845914-58d69e84-6901-45ce-a1ac-412e31844524?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "get a single ptoduct",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "   pm.test(\"Status code is 200\", function () {\r",
+              "       pm.response.to.have.status(200);\r",
+              "   });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/products/:id",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "products",
+            ":id"
+          ],
+          "variable": [
+            {
+              "key": "id",
+              "value": "5"
+            }
+          ]
+        },
+        "description": "get the product with the id 1"
+      },
+      "response": []
+    },
+    {
+      "name": "get fragrances products",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "   pm.test(\"Status code is 200\", function () {\r",
+              "       pm.response.to.have.status(200);\r",
+              "   });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/products/category/laptops",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "products",
+            "category",
+            "laptops"
+          ],
+          "query": [
+            {
+              "key": "",
+              "value": null,
+              "type": "text",
+              "disabled": true
+            }
+          ]
+        },
+        "description": "get the products with category \"fragrances\""
+      },
+      "response": []
+    },
+    {
+      "name": "Get all products categories",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "   pm.test(\"Status code is 200\", function () {\r",
+              "       pm.response.to.have.status(200);\r",
+              "   });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/products/category-list",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "products",
+            "category-list"
+          ]
+        },
+        "description": "get the categories that exsist for this products"
+      },
+      "response": []
+    },
+    {
+      "name": "get all users",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "   pm.test(\"Status code is 200\", function () {\r",
+              "       pm.response.to.have.status(200);\r",
+              "   });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/users?select=firstName,age",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "users"
+          ],
+          "query": [
+            {
+              "key": "select",
+              "value": "firstName,age"
+            }
+          ]
+        },
+        "description": "get all users in this api"
+      },
+      "response": []
+    },
+    {
+      "name": "get first user",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "       pm.response.to.have.status(200);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/users/:id",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "users",
+            ":id"
+          ],
+          "variable": [
+            {
+              "key": "id",
+              "value": "1"
+            }
+          ]
+        },
+        "description": "get the user with the id 1"
+      },
+      "response": []
+    },
+    {
+      "name": "get all posts",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "   pm.test(\"Status code is 200\", function () {\r",
+              "       pm.response.to.have.status(200);\r",
+              "   });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/posts",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "posts"
+          ]
+        },
+        "description": "get the list with all posts"
+      },
+      "response": []
+    },
+    {
+      "name": "search Mascara",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "   pm.test(\"Status code is 200\", function () {\r",
+              "       pm.response.to.have.status(200);\r",
+              "   });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://dummyjson.com/products/search?q=Mascara",
+          "protocol": "https",
+          "host": [
+            "dummyjson",
+            "com"
+          ],
+          "path": [
+            "products",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "Mascara"
+            }
+          ]
+        },
+        "description": "search the products related to \"Mascara\""
+      },
+      "response": []
+    },
+    {
+      "name": "get all comments",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "   pm.test(\"Status code is 200\", function () {\r",
+              "       pm.response.to.have.status(200);\r",
+              "   });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/comments",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "comments"
+          ]
+        },
+        "description": "get the comments list"
+      },
+      "response": []
+    },
+    {
+      "name": "get all todos",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "   pm.test(\"Status code is 200\", function () {\r",
+              "       pm.response.to.have.status(200);\r",
+              "   });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/todos",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "todos"
+          ]
+        },
+        "description": "get the todos list"
+      },
+      "response": []
+    },
+    {
+      "name": "get all recipes",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "   pm.test(\"Status code is 200\", function () {\r",
+              "       pm.response.to.have.status(200);\r",
+              "   });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/todos",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "todos"
+          ]
+        },
+        "description": "get the recipes list"
+      },
+      "response": []
+    },
+    {
+      "name": "add product",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "   pm.test(\"Status code is 200\", function () {\r",
+              "       pm.response.to.have.status(200);\r",
+              "   });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/products/add",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "products",
+            "add"
+          ]
+        },
+        "description": "create a new product to products list"
+      },
+      "response": []
+    },
+    {
+      "name": "add todo",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "   pm.test(\"Status code is 200\", function () {\r",
+              "       pm.response.to.have.status(200);\r",
+              "   });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"todo\": \"Use DummyJSON in the project\",\r\n    \"completed\": false,\r\n    \"userId\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/todos/add",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "todos",
+            "add"
+          ]
+        },
+        "description": "create a new todo to todos list"
+      },
+      "response": []
+    },
+    {
+      "name": "add comment",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "   pm.test(\"Status code is 200\", function () {\r",
+              "       pm.response.to.have.status(200);\r",
+              "   });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"body\": \"This makes all sense to me!\",\r\n    \"postId\": 3,\r\n    \"userId\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/comments/add",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "comments",
+            "add"
+          ]
+        },
+        "description": "create a new comment to comments list"
+      },
+      "response": []
+    },
+    {
+      "name": "update comment",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "   pm.test(\"Status code is 200\", function () {\r",
+              "       pm.response.to.have.status(200);\r",
+              "   });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"body\": \"This makes all sense to meeeeeee!\",\r\n    \"postId\": 3,\r\n    \"userId\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/comments/:id",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "comments",
+            ":id"
+          ],
+          "variable": [
+            {
+              "key": "id",
+              "value": "1"
+            }
+          ]
+        },
+        "description": "update the details of a specific comment"
+      },
+      "response": []
+    },
+    {
+      "name": "delete comment",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "   pm.test(\"Status code is 200\", function () {\r",
+              "       pm.response.to.have.status(200);\r",
+              "   });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/comments/:id",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "comments",
+            ":id"
+          ],
+          "variable": [
+            {
+              "key": "id",
+              "value": "1"
+            }
+          ]
+        },
+        "description": "Delete a specific comment according to its ID"
+      },
+      "response": []
+    },
+    {
+      "name": "updeate product",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "   pm.test(\"Status code is 200\", function () {\r",
+              "       pm.response.to.have.status(200);\r",
+              "   });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"category\":\"laptops\",\r\n    \"title\":\"HP Dual Screen Laptop\",\r\n    \"rating\": 3.95,\r\n    \"stock\": 10,\r\n    \"price\": 5089.99\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/products/:id",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "products",
+            ":id"
+          ],
+          "variable": [
+            {
+              "key": "id",
+              "value": "5"
+            }
+          ]
+        },
+        "description": "update the details of a specific product"
+      },
+      "response": []
+    },
+    {
+      "name": "delete product",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "   pm.test(\"Status code is 200\", function () {\r",
+              "       pm.response.to.have.status(200);\r",
+              "   });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/products/:id",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "products",
+            ":id"
+          ],
+          "variable": [
+            {
+              "key": "id",
+              "value": "5"
+            }
+          ]
+        },
+        "description": "Delete a specific product according to its ID"
+      },
+      "response": []
+    }
+  ]
+}
